@@ -32,15 +32,21 @@ p{
 nav {
   height: 80px;
   display: flex;
+  justify-content: space-between;
 }
 
 .nav__container {
-  display: flex;
-  width: 100%;
+width: 100%;
+  max-width: 1200px;
   padding: 0px 24px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.no__cursor{
+    cursor: not-allowed;
 }
 
 .logo {
@@ -157,7 +163,6 @@ button:active{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 /*
 
@@ -311,13 +316,18 @@ footer{
     background-color: #242424;
 }
 
-.footer__logo{
+.footer__logo--img{
     width: 160px;
     filter: grayscale(1) invert(1);
+    padding: 0;
+}
+
+.footer__logo{
+    display: flex;
 }
 
 .footer__list{
-    padding: 24px 0 24px 0;
+    margin: 20px 0 24px 0;
 }
 
 .footer__link{
